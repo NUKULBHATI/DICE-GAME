@@ -1,0 +1,130 @@
+/* .maincontainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.container{
+    width: 649px;
+    height: 522px;
+    background-color: white;
+}
+
+.heading{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn{
+    HEIGHT: 50px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #161b17;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font: bold;
+}
+button:hover {
+    background-color: #262926;
+}
+
+@media screen and (max-width: 992px) {
+  .maincontainer {
+    display: flex;
+    flex-direction: column; 
+}
+} */
+
+.maincontainer {
+    width: 100%;
+    min-height: 100vh;                /* better than fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+}
+
+/* MAIN BOX */
+.container {
+    width: 649px;
+    max-width: 100%;                  /* prevents overflow */
+    height: 522px;
+    background-color: white;
+    padding: 20px;
+}
+
+/* HEADING */
+.heading {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.btn {
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #161b17;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #262926;
+}
+
+/* 📱 MOBILE */
+@media screen and (max-width: 600px) {
+
+    .maincontainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container {
+        height: auto;                /* allow content to grow */
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        font-size: 15px;
+    }
+}
+
+/* 📱 TABLET */
+@media screen and (max-width: 992px) {
+
+    .maincontainer {
+        flex-direction: column;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+}

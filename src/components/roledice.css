@@ -1,0 +1,88 @@
+/* .roledice{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.txt{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+  .roledice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+} */
+
+
+.roledice {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* DICE IMAGE */
+.roledice img {
+    width: 150px;
+    max-width: 90%;
+    transition: transform 0.2s ease;
+}
+
+/* HOVER EFFECT (DESKTOP ONLY) */
+@media (hover: hover) {
+    .roledice:hover img {
+        transform: scale(1.05);
+    }
+}
+
+/* TEXT */
+.txt {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+/* 📱 MOBILE */
+@media screen and (max-width: 600px) {
+    .roledice img {
+        width: 110px;
+    }
+
+    .txt {
+        font-size: 16px;
+    }
+}
+
+/* 📱 TABLET */
+@media screen and (max-width: 992px) {
+    .roledice {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .roledice img {
+        width: 130px;
+    }
+
+    .txt {
+        font-size: 18px;
+    }
+}
